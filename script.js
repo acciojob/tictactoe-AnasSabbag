@@ -4,8 +4,8 @@ let board = ["", "", "", "", "", "", "", "", ""];
 let gameActive = false;
 
 function startGame() {
-    const p1 = document.getElementById("player-1").value.trim() || "Player 1";
-    const p2 = document.getElementById("player-2").value.trim() || "Player 2";
+    const p1 = document.getElementById("#player1").value.trim() || "Player 1";
+    const p2 = document.getElementById("#player2").value.trim() || "Player 2";
 
     player1 = p1;
     player2 = p2;
