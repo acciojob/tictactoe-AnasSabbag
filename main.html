@@ -8,6 +8,37 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<div id="players-form">
+      <label for="player-1">Player 1</label>
+      <input id="player-1" type="text" placeholder="Enter P1 Name" />
+      <br />
+      <label for="player-2">Player 2</label>
+      <input id="player-2" type="text" placeholder="Enter P2 Name" />
+      <br />
+      <input type="button" value="startGame" onclick="startGame()" />
+	  	
+	</div>
+
+	<div id="game">
+		<h1>TIC TAC TOE</h1>
+     
+	  <div class="message">
+	  </div>
+      <div class="board">
+        <div class="cells" id="1" onclick="makeMove(0)"></div>
+        <div class="cells" id="2" onclick="makeMove(1)"></div>
+        <div class="cells" id="3" onclick="makeMove(2)"></div>
+        <div class="cells" id="4" onclick="makeMove(3)"></div>
+        <div class="cells" id="5" onclick="makeMove(4)"></div>
+        <div class="cells" id="6" onclick="makeMove(5)"></div>
+        <div class="cells" id="7" onclick="makeMove(6)"></div>
+        <div class="cells" id="8" onclick="makeMove(7)"></div>
+        <div class="cells" id="9" onclick="makeMove(8)"></div>
+      </div>
+      
+      <button type="submit" id="resetBtn" onclick="resetGame()">Reset</button>
+    </div>
+	
     <script type="text/javascript" src="./script.js">
 </script>
 

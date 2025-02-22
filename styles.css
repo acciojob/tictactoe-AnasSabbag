@@ -1,1 +1,36 @@
-/*  your css code here. If applicable */
+#game {
+    height: 500px;
+    width: 500px;
+    display: none;
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.cells {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    font-size: 24px;
+    font-weight: bold;
+    background: lightgray;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.cells:hover {
+    background: gray;
+}
+
+.message {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+}
